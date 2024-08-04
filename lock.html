@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Erreur d'accès</title>
+  <link rel="stylesheet" href="css/lock.css">
+  <link rel="shortcut icon" href="images/icons/icon6.png" />
+</head>
+
+<header>
+  <nav>
+    <ul>
+      <li>
+        <a href="index.html">Accueil</a>
+      </li>
+      <li>
+        <a href="Domestique.html">Possessions Domestiques</a>
+        <ul class="dropdown">
+          <li><a href="Domestique.html#Impératrice"> Impératrice suprême</a></li>
+          <li><a href="Domestique.html#Diplomate">Diplomate </a></li>
+          <li><a href="Domestique.html#D-bonheur">Dames du bonheur</a></li>
+          <li><a href="Domestique.html#D-louves">Dames louves</a></li>
+          <li><a href="Domestique.html#D-chattes">Dames chattes</a></li>
+          <li><a href="Domestique.html#D-renardes">Dames renardes</a></li>
+          <li><a href="Domestique.html#antho">Sœurs anthropomorphes</a></li>
+          <li><a href="Domestique.html#Cuisinières">Cuisinières</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="Militaire.html">Possessions Militaires</a>
+        <ul class="dropdown">
+          <li><a href="Militaire.html#Générale">Générale</a></li>
+          <li><a href="Militaire.html#Lieutenantes">Lieutenantes</a></li>
+          <li><a href="Militaire.html#Chef">Chef</a></li>
+          <li><a href="Militaire.html#loup">Division "Wolfies"</a></li>
+          <li><a href="Militaire.html#lapin">Division "Bunnies"</a></li>
+          <li><a href="Militaire.html#chat">Division "Caties"</a></li>
+          <li><a href="Militaire.html#aigle">Division "Eagles"</a></li>
+          <li><a href="Militaire.html#fox">Division "Foxies"</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="Magique.html">Possessions Magiques</a>
+        <ul class="dropdown">
+          <li><a href="Magique.html#Darkmage">Mages noires</a></li>
+          <li><a href="Magique.html#Démones">Démones</a></li>
+          <li><a href="Magique.html#Succubes">Succubes</a></li>
+          <li><a href="Magique.html#Azazel">Azazel</a></li>
+          <li><a href="Magique.html#Garde">Gardiennes</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="Peuple.html">Peuple</a>
+        <ul class="dropdown">
+          <li><a href="Peuple.html#Scientifiques">Scientifiques</a></li>
+          <li><a href="Peuple.html#Bourgeoises">Bourgeoises</a></li>
+          <li><a href="Peuple.html#Juge">Juge</a></li>
+          <li><a href="Peuple.html#Avocate">Avocate</a></li>
+          <li><a href="Peuple.html#Professeure">Professeures</a></li>
+          <li><a href="Peuple.html#Etudiente">Étudiantes</a></li>
+          <li><a href="Peuple.html#Mafieuses">Mafieuses</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="https://youtu.be/dQw4w9WgXcQ">Autres</a>
+        <ul class="dropdown">
+          <li><a href="https://superwaifu.github.io/Holy-Reich/" target="_blank"> Holy-Reich </a></li>
+          <li><a href="map.html">Map Monde</a></li>
+          <li><a href="Lois.html">Lois</a></li>
+          <li><a href="lock.html">Autres</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>
+  
+
+<body>
+
+  <h1>[ERREUR D'AUTHENTIFICATION]</h1>
+  <h2>Nous sommes désolés mais cette page est verrouillée pour les personnes non autorisées.</h2>
+  <h3><a href="index.html">[Revenir en lieu sûr]</a></h3>
+
+  <div id="unlock-form">
+    <h4>Entrez le code d'authentification</h4>
+    <input type="password" id="unlock-code">
+    <button onclick="checkCode()" id="button">DEBLOQUER</button>
+    <div id="status-message"></div>
+	<div id="loader-container" style="display: none;">
+    <div class="loader"></div></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js"></script>
+  <script>
+    function checkCode() {
+		var codeInput = document.getElementById("unlock-code").value;
+		var statusMessage = document.getElementById("status-message");
+		var contentDiv = document.getElementById("button");
+		var loaderContainer = document.getElementById("loader-container");
+
+		// Hasher le code saisi par l'utilisateur avec SHA-256
+		var hashedCode = sha256(codeInput);
+
+		// Vérifier si le code est correct
+		if (hashedCode === "416569497baffe9f281dfd898dfb8c3c8dcf278552a5b733ecfba15b6c30c661") {
+			loaderContainer.style.display = "block";
+			statusMessage.innerHTML = "Déblocage de la page en cours...";
+			contentDiv.style.display = "none";
+			statusMessage.style.color = "green";
+			setTimeout(function () {
+			window.location.href = "locked.html";
+			}, 1300);	
+		} else if (hashedCode === "c521cf9db4220393b05bea96ce2d4abb3cb2783658edb2a0580b4a16f337f248") {
+			loaderContainer.style.display = "block";
+			statusMessage.innerHTML = "Déblocage de la page en cours...";
+			contentDiv.style.display = "none";
+			statusMessage.style.color = "green";
+			setTimeout(function () {
+			window.location.href = "GED.html";
+			}, 1300);			
+		} else {
+			// Afficher un message d'erreur
+			statusMessage.innerHTML = "Code de incorrect, veuillez réessayer";
+			statusMessage.style.color = "red";
+		}
+    }
+	
+	document.addEventListener("keydown", handleKeyDown);
+	function handleKeyDown(event) {
+	if (event.key === "Enter") {
+		checkCode();
+		}
+	}
+  </script>
+ </body>
+</html>
