@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'MONO';
+    src: url('MONO.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    font-family: MONO;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+}
+
+.entity-class {
+    border: 3px solid white;
+    padding: 20px;
+    width: 20%;
+    margin: 5px;
+    transition: transform 0.3s ease;
+    border-radius: 20px;
+}
+
+.entity-class img {
+    display: flex;
+    margin: 0 auto;
+    max-width: 100%;
+    transition: transform 0.3s ease;
+    height: auto;
+}
+
+.entity-class img:hover {
+    transform:scale(1.05);
+}
+
+.class-name {
+    color: black;
+    text-align: center;
+    font-size: 50px;
+    transition: transform 0.3s ease;
+}
+
+.class-text {
+    color: black;
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.class-text:hover {
+    transform:scale(1.02);
+}
+
+.entity-class:hover {
+    transform:scale(1.03);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.delta {
+    background: linear-gradient(to right, #44ff00, #77ff00);
+}
+
+.epsilon {
+    background: linear-gradient(to right, #77ff00, #fff700);
+}
+
+.phi {
+    background: linear-gradient(to right, #fff700, #ff8400);
+}
+
+.psi {
+    background: linear-gradient(to right, #ff8400, #ff5500ee);
+}
+
+.omega {
+    background: linear-gradient(to right, #ff5500ee, #ff0000);
+}

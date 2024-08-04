@@ -1,0 +1,246 @@
+@font-face {
+    font-family: 'Hell';
+    src: url('TT.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Glitch';
+    src: url('Static.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+nav {
+    font-family: 'Glitch';
+}
+
+h1,
+h2 {
+    font-family: 'Hell';
+}
+
+.list ul {
+    font-size: 30px;
+    color: white;
+    padding: 10;
+    padding-left: 2rem;
+    list-style-type: none;
+}
+
+.list li {
+    max-width: 100%;
+    list-style-type: none;
+    font-size: 33px;
+    color: white;
+    margin: 0.5px 0;
+    padding: 5px;
+    border-radius: 1px;
+}
+
+.list li:hover {
+    transform: scale(1.01);
+}
+
+.list li a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.list li a:hover {
+    color: rgb(165, 0, 0);
+    transform: scale(1.02);
+}
+
+h1,
+h2 {
+    overflow-x: hidden;
+    animation: glitchEffect 1.1s infinite;
+}
+
+@keyframes glitchEffect {
+    0% {
+        clip: rect(24px, 9999px, 74px, 0);
+        transform: skew(3deg);
+        transform: translate(-15px, -2px);
+    }
+
+    5% {
+        clip: rect(85px, 9999px, 45px, 0);
+        transform: skew(8deg);
+        text-shadow: -0.05em -0.025em 0 #ff7b00, 0.025em 0.035em 0 #ffd000,
+            -0.05em -0.05em 0 #575757;
+    }
+
+    10% {
+        clip: rect(35px, 9999px, 88px, 0);
+        transform: skew(1deg);
+    }
+
+    15% {
+        clip: rect(94px, 9999px, 38px, 0);
+        transform: skew(7deg);
+        text-shadow: 0.05em 0.035em 0 #ff7b00, 0.03em 0 0 #ffd000,
+            0 -0.04em 0 #575757;
+    }
+
+    20% {
+        clip: rect(54px, 9999px, 58px, 0);
+        transform: skew(2deg);
+        transform: translate(-5px, -2px);
+    }
+
+    25% {
+        clip: rect(84px, 9999px, 32px, 0);
+        transform: skew(5deg);
+    }
+
+    30% {
+        clip: rect(64px, 9999px, 92px, 0);
+        transform: skew(6deg);
+    }
+
+    35% {
+        clip: rect(44px, 9999px, 70px, 0);
+        transform: skew(14deg);
+        text-shadow: -0.05em -0.025em 0 #ff7b00, 0.025em 0.035em 0 #ffd000,
+            -0.05em -0.05em 0 #575757;
+    }
+
+    40% {
+        clip: rect(74px, 9999px, 82px, 0);
+        transform: skew(2deg);
+        transform: translate(-5px, -12px);
+    }
+
+    45% {
+        clip: rect(24px, 9999px, 74px, 0);
+        transform: skew(1deg);
+    }
+
+    50% {
+        clip: rect(64px, 9999px, 52px, 0);
+        transform: skew(8deg);
+    }
+
+    55% {
+        clip: rect(84px, 9999px, 88px, 0);
+        transform: skew(5deg);
+        text-shadow: 0.05em 0 0 #ff7b00, -0.03em -0.04em 0 #ffd000,
+            0.025em 0.04em 0 #575757;
+    }
+
+    60% {
+        clip: rect(24px, 9999px, 44px, 0);
+        transform: skew(17deg);
+    }
+
+    65% {
+        clip: rect(74px, 9999px, 60px, 0);
+        transform: skew(3deg);
+    }
+
+    70% {
+        clip: rect(44px, 9999px, 92px, 0);
+        transform: skew(4deg);
+    }
+
+    75% {
+        clip: rect(54px, 9999px, 72px, 0);
+        transform: skew(6deg);
+        transform: translate(-15px, -2px);
+    }
+
+    80% {
+        clip: rect(94px, 9999px, 38px, 0);
+        transform: skew(1deg);
+        text-shadow: 0.05em 0.035em 0 #ff7b00, 0.03em 0 0 #ffd000,
+            0 -0.04em 0 #575757;
+    }
+
+    85% {
+        clip: rect(24px, 9999px, 74px, 0);
+        transform: skew(18deg);
+    }
+
+    90% {
+        clip: rect(64px, 9999px, 52px, 0);
+        transform: skew(5deg);
+    }
+
+    95% {
+        clip: rect(84px, 9999px, 88px, 0);
+        transform: skew(7deg);
+    }
+
+    100% {
+        clip: rect(24px, 9999px, 44px, 0);
+        transform: skew(2deg);
+        transform: translate(-5px, -2px);
+        text-shadow: -0.05em 0 0 #ff7b00, -0.025em -0.04em 0 #ffd000,
+            -0.04em -0.025em 0 #575757;
+    }
+}
+
+.listes {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.circle_name {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+}
+
+.circle_name p {
+    margin: 0px;
+    max-width: 50%;
+    cursor: pointer;
+}
+
+#sin1:hover {
+    transform: scale(1.15);
+    color: darkred;
+    font-weight: bold;
+}
+
+#sin2:hover {
+    transform: scale(1.15);
+    color: orange;
+    font-weight: bold;
+}
+
+#sin3:hover {
+    transform: scale(1.15);
+    color: yellow;
+    font-weight: bold;
+}
+
+#sin4:hover {
+    transform: scale(1.15);
+    color: green;
+    font-weight: bold;
+}
+
+#sin5:hover {
+    transform: scale(1.15);
+    color: blue;
+    font-weight: bold;
+}
+
+#sin6:hover {
+    transform: scale(1.15);
+    color: purple;
+    font-weight: bold;
+}
+
+#sin7:hover {
+    transform: scale(1.15);
+    color: pink;
+    font-weight: bold;
+}

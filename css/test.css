@@ -1,0 +1,88 @@
+body {
+    background-color: #222;
+    color: #eee;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.custom-audio-player {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    border: 2px solid #444;
+    border-radius: 8px;
+    background-color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.control-button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #555;
+    color: #eee;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    border-radius: 4px;
+}
+
+.control-button:hover {
+    background-color: #af0000;
+    transform: translateY(15);
+    font-weight: bold;
+}
+
+.timestamp {
+    font-size: 16px;
+    color: #df5900;
+}
+
+.progress-container {
+    width: 150px;
+    height: 8px;
+    background-color: #666;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #ff0000;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 0.1s ease;
+}
+
+.volume-slider {
+    width: 80px;
+    background: #ff7214;
+    height: 10px;
+    border-radius: 15px;
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    opacity: 0.7;
+}
+
+.volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #ff4800;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.audio-player {
+    display: none;
+}

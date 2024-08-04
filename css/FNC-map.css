@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'MONO';
+    src: url('MONO.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    overflow-x: hidden;
+}
+.maps {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.map {
+    margin: 25px;
+    text-align: center;
+}
+  
+.map img {
+    background-color:gold;
+    border-radius:20px;
+    padding:10px;
+    display: inline-block;
+    max-width: 100%;
+    border-radius: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+}
+
+  
+/* Animation pour la pop-up */
+@keyframes slideInRight {
+    0% {
+        transform: translate(100%);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translate(-100%);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+
+.popup1 {
+    font-family: 'MONO';
+    font-size: 20px;
+    color: #ffffff;;
+    display: none;
+    position: absolute;
+    left: 60px;
+    transform: translate(-100%);
+    background-color: rgba(37, 37, 37, 0.9);
+    border: 2px solid gold;
+    padding: 20px;
+    text-align: center;
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: slideInLeft 0.2s ease-in-out forwards;
+}
+
+.popup2 {
+    font-family: 'MONO';
+    font-size: 20px;
+    color: #ffffff;;
+    display: none;
+    position: absolute;
+    right: 60px;
+    transform: translate(0);
+    background-color: rgba(37, 37, 37, 0.9);
+    border: 2px solid gold;
+    padding: 20px;
+    text-align: center;
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: slideInRight 0.2s ease-in-out forwards;
+}
+
+.popup1 img{
+    max-width: 450px;
+    border-radius: 35px;
+}
+.popup1 img:hover {
+    transform: scale(1.02);
+}
+.popup2 img{
+    max-width: 450px;
+    border-radius: 25px;
+}
+.popup2 img:hover {
+    transform: scale(1.02);
+}

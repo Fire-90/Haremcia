@@ -1,0 +1,245 @@
+@font-face {
+    font-family: 'Hestina Font';
+    src: url('Hestina Font.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(20, 20, 20, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    font-family: 'Hestina Font'
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 40px;
+    font-style: italic;
+    text-align: center;
+    color: white;
+    margin-left: 50px;
+}
+
+h3 {
+    font-size: 35px;
+    font-style: italic;
+    text-align: left;
+    color: white;
+    margin-left: 40px;
+    text-decoration: underline
+}
+
+h4 {
+    font-size: 40px;
+    text-align: center;
+    height: 100px;
+    overflow: hidden;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+h4:hover {
+    color: cyan;
+    transform: scale(1.2);
+    font-weight: bold;
+}
+
+.menulist ul {
+    font-size: 25px;
+    color: white;
+    padding-left: 2rem;
+    list-style-type: none;
+}
+
+.menulist li {
+    font-size: 35px;
+    color: white;
+    padding-left: 2rem;
+    list-style-type: none;
+}
+
+
+nav {
+    background-color: #222;
+    padding: 0px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    height: 55px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+h5{
+    margin: 0 10px;
+    display: block;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.2s;
+    padding: 10px 10px;
+}
+
+h5:hover {
+    color: #f5c518;
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Hestina Font';
+    src: url('Hestina Font.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(20, 20, 20, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    font-family: 'Hestina Font';
+    overflow: hidden;
+    color: white;
+}
+
+h1, h2, h3, h4, .menulist ul, .menulist li, nav, nav ul, nav li, nav li h5 {
+    animation: glitchEffect 0.8s infinite;
+}
+
+
+
+@keyframes glitchEffect {
+    0% {
+        clip: rect(24px, 9999px, 74px, 0);
+        transform: skew(3deg);
+        transform: translate(-15px, -2px);
+    }
+    5% {
+        clip: rect(85px, 9999px, 45px, 0);
+        transform: skew(8deg);
+        text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff,
+        -0.05em -0.05em 0 #fffc00;
+        opacity: 0.8;
+    }
+    10% {
+        clip: rect(35px, 9999px, 88px, 0);
+        transform: skew(1deg);
+        opacity: 0.2;
+    }
+    15% {
+        clip: rect(94px, 9999px, 38px, 0);
+        transform: skew(7deg);
+        text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff,
+        0 -0.04em 0 #fffc00;
+    }
+    20% {
+        clip: rect(54px, 9999px, 58px, 0);
+        transform: skew(2deg);
+        transform: translate(-5px, -2px);
+    }
+    25% {
+        clip: rect(84px, 9999px, 32px, 0);
+        transform: skew(5deg);
+    }
+    30% {
+        clip: rect(64px, 9999px, 92px, 0);
+        transform: skew(6deg);
+        opacity: 0.8;
+    }
+    35% {
+        clip: rect(44px, 9999px, 70px, 0);
+        transform: skew(14deg);
+        text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff,
+        -0.05em -0.05em 0 #fffc00;
+    }
+    40% {
+        clip: rect(74px, 9999px, 82px, 0);
+        transform: skew(2deg);
+        transform: translate(-5px, -12px);
+    }
+    45% {
+        clip: rect(24px, 9999px, 74px, 0);
+        transform: skew(1deg);
+        opacity: 0.8;
+    }
+    50% {
+        clip: rect(64px, 9999px, 52px, 0);
+        transform: skew(8deg);
+        opacity: 0.8;
+    }
+    55% {
+        clip: rect(84px, 9999px, 88px, 0);
+        transform: skew(5deg);
+        text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+        0.025em 0.04em 0 #fffc00;
+    }
+    60% {
+        clip: rect(24px, 9999px, 44px, 0);
+        transform: skew(17deg);
+    }
+    65% {
+        clip: rect(74px, 9999px, 60px, 0);
+        transform: skew(3deg);
+    }
+    70% {
+        clip: rect(44px, 9999px, 92px, 0);
+        transform: skew(4deg);
+        opacity: 0.9;
+    }
+    75% {
+        clip: rect(54px, 9999px, 72px, 0);
+        transform: skew(6deg);
+        transform: translate(-15px, -2px);
+        opacity: 0.8;
+    }
+    80% {
+        clip: rect(94px, 9999px, 38px, 0);
+        transform: skew(1deg);
+        text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff,
+        0 -0.04em 0 #fffc00;
+    }
+    85% {
+        clip: rect(24px, 9999px, 74px, 0);
+        transform: skew(18deg);
+    }
+    90% {
+        clip: rect(64px, 9999px, 52px, 0);
+        transform: skew(5deg);
+    }
+    95% {
+        clip: rect(84px, 9999px, 88px, 0);
+        transform: skew(7deg);
+    }
+    100% {
+        clip: rect(24px, 9999px, 44px, 0);
+        transform: skew(2deg);
+        transform: translate(-5px, -2px);
+        text-shadow: -0.05em 0 0 #00fffc, -0.025em -0.04em 0 #fc00ff,
+        -0.04em -0.025em 0 #fffc00;
+    }
+}
+
+/* Style pour le GIF */
+#corrupt-gif {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    pointer-events: none;
+    z-index: 9999;
+}

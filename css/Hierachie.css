@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'MONO';
+    src: url('MONO.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+.division-container {
+    font-family: 'MONO';
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.division {
+    border-radius: 20px;
+    padding: 10px;
+    width: 400px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: filter 0.3s ease, color 0.1s ease, transform 0.3s;
+}
+
+.division:hover {
+    filter: brightness(1.15);
+}
+
+h3 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #333;
+    color: #ffffff;
+    padding: 15px;
+    margin: 0;
+    user-select: none;
+    transition: filter 0.3s ease, color 0.3s ease, transform 0.3s;
+}
+
+h3:hover {
+    transform: scale(1.03);
+  }
+  
+.ul {
+    border-radius: 10px;
+    list-style-type: none;
+    padding: 0;
+    border: 1px solid #252525;
+    transition: max-height 0.5s ease;
+}
+
+.li {
+    user-select: none;
+    padding: 10px 30px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.org-list {
+    display: flex;
+    gap: 6px;
+    align-items: baseline;
+}
+
+.arrow {
+    font-weight: bold;
+}
+
+.text {
+    transition: filter 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+.text:hover {
+    transform: translate(+15px);
+}
+  
+.direction-division {
+    background-color: #a10202;
+}
+
+.research-division {
+    background-color: #0fb11c;
+}
+
+.security-division {
+    background-color: #b3eb1a;
+}
+
+.guinea-pig-division {
+    background-color: #ff9800;
+}
+
+.engineering-division {
+    background-color: #ff5722;
+}
+
+.it-division {
+    background-color: #00e1ff7e;
+}
+
+.org-logo {
+    max-width: 25px;
+    max-height: 25px;
+  }
+
+.popup-image {
+    margin-top: 10px;
+    max-width: 330px;
+    border-radius: 15px;
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: filter 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}

@@ -1,0 +1,225 @@
+@font-face {
+  font-family: 'DancingScript';
+  src: url('DancingScript.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MONO';
+  src: url('MONO.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+header{
+  font-family: 'DancingScript';
+}
+
+html{
+  background:  linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(20,20,20,1) 50%, rgba(0,0,0,1) 100%);
+}
+
+body {
+  font-family: 'MONO';
+  margin: 0px;
+}
+
+nav {
+  background-color: #222;
+  padding: 0px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  height: 60px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  display: inline-block;
+  position: relative;
+  margin: 0 10px;
+}
+
+nav li a {
+  display: block;
+  padding: 10px 10px;
+  color: white;
+  font-size: 35px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+  border-radius: 5px;
+}
+
+nav li a:hover {
+  background-color: #f5c518;
+  color: #222;
+}
+
+nav .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%; /* Centre le dropdown horizontalement */
+  transform: translateX(-50%); /* Recentre le dropdown */
+  background-color: #222;
+  opacity: 0; /* Ajoute une opacité initiale pour l'animation */
+  transition: opacity 0.3s ease-in-out; /* Ajoute une transition d'opacité */
+}
+
+nav .dropdown li {
+  white-space: nowrap;
+  display: block;
+}
+
+nav .dropdown li a {
+	
+  display: block;
+  padding: 10px 10px;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+}
+
+nav li:hover .dropdown {
+  display: block;
+  opacity: 1;
+}
+
+nav .dropdown a:hover {
+  background-color: #f5c518;
+  color: #222;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+nav .dropdown {
+  animation: fade-in 0.3s ease-in-out;
+}
+
+
+h1 {
+  font-size: 55px;
+  text-align: center;
+  color: red;
+  margin-top: 50px;
+}
+
+h2 {
+  font-size: 30px;
+  font-style: italic;
+  text-align: center;
+  color: white;
+  margin-left: 50px;
+}
+
+h3 {
+  font-size: 35px;
+  text-align: center;
+  height: 100px;
+  overflow: hidden;
+}
+
+h3 a {
+  display: inline-block;
+  padding: 15px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+h3 a:hover {
+  color: red;
+  transform: scale(1.2);
+  font-weight:bold;
+}
+
+h4 {
+  font-size: 20px;
+  text-align: center;
+}
+
+
+
+#unlock-form {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+#unlock-form h2 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+#unlock-code {
+  padding: 1px;
+  font-size: 35px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#unlock-form button {
+  font-family: 'MONO';
+  padding: 10px 10px;
+  font-size: 25px;
+  background-color: gold;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#unlock-form button:hover {
+  transform: scale(1.1);
+}
+
+#status-message {
+  font-size: 18x;
+  color: red;
+  margin-top: 10px;
+}
+
+.loader {
+  width: 350px;
+  height: 20px;
+  background-color: #f3f3f3;
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto;
+  border-radius: 15px;
+}
+
+.loader:before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  background-color: green;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
