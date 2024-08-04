@@ -1,0 +1,186 @@
+@font-face {
+  font-family: 'DancingScript';
+  src: url('DancingScript.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(20,20,20,1) 50%, rgba(0,0,0,1) 100%);
+  font-family: 'DancingScript';
+  margin: 0px;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  color: gold;
+  margin-top: 50px;
+}
+
+h2 {
+  font-size: 40px;
+  font-style: italic;
+  text-align: center;
+  color: white;
+  margin-left: 50px;
+}
+
+h3 {
+  font-size: 38px;
+  font-style: italic;
+  text-align: left;
+  color: white;
+  margin-left: 40px;
+  text-decoration: underline
+}
+
+h4 {
+  font-size: 35px;
+  text-align: center;
+  height: 100px;
+  overflow: hidden;
+}
+
+h4 a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+h4 a:hover {
+  color: #f5c518;
+  transform: scale(1.2);
+  font-weight:bold;
+}
+
+.list ul {
+  font-size: 30px;
+  color: white;
+  padding: 10;
+  padding-left: 2rem;
+  list-style-type: none;
+}
+.list li {
+  list-style-type: none;
+  font-size: 33px;
+  color: white;
+  margin: 0.5px 0;
+  padding: 5px;
+  border-radius: 1px;
+}
+
+nav {
+  background-color: #222;
+  padding: 0px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  height: 60px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  display: inline-block;
+  position: relative;
+  margin: 0 10px;
+}
+
+nav li a {
+  display: block;
+  padding: 10px 10px;
+  color: white;
+  font-size: 35px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+  border-radius: 5px;
+}
+
+nav li a:hover {
+  background-color: #f5c518;
+  color: #222;
+}
+
+nav .dropdown {
+  border-radius: 10px;
+  z-index: 9999;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%; 
+  transform: translateX(-50%); 
+  background-color: #222;
+  opacity: 0; 
+  transition: opacity 0.3s ease-in-out;
+}
+
+nav .dropdown li {
+  white-space: nowrap;
+  display: block;
+}
+
+nav .dropdown li a {
+	
+  display: block;
+  padding: 10px 10px;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+}
+
+nav li:hover .dropdown {
+  display: block;
+  opacity: 1;
+}
+
+nav .dropdown a:hover {
+  background-color: #f5c518;
+  color: #222;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+nav .dropdown {
+  animation: fade-in 0.3s ease-in-out;
+}
+
+.gallery {
+  float:right;
+  margin-right: 110px;
+  width: auto;
+  max-width: 700px;
+}
+
+.gallery img {
+  max-width: 300px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  border-radius: 80px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+.gallery figcaption {
+  display: none;
+}
