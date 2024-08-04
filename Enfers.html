@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Les Enfers</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/Enfers2.css">
+	<link rel="stylesheet" href="css/Enfers1.css">
+	<link rel="shortcut icon" href="images/icons/icon3.png" />
+	<script src="code.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', (event) => {
+			setTimeout(() => {
+				document.getElementById('corrupt-gif2').style.display = 'none';
+				document.getElementById('corrupt-gif1').style.display = 'block';
+				setTimeout(() => {
+					document.getElementById('corrupt-gif1').style.display = 'none';
+				}, 300);
+			}, 400);
+		});
+	</script>
+</head>
+
+<header>
+	<nav>
+		<ul>
+			<li>
+				<a href="index.html">Accueil</a>
+			</li>
+			<li>
+				<a href="Domestique.html">Possessions Domestiques</a>
+				<ul class="dropdown">
+					<li><a href="Domestique.html#Impératrice"> Impératrice suprême</a></li>
+					<li><a href="Domestique.html#Diplomate">Diplomate </a></li>
+					<li><a href="Domestique.html#D-bonheur">Dames du bonheur</a></li>
+					<li><a href="Domestique.html#D-louves">Dames louves</a></li>
+					<li><a href="Domestique.html#D-chattes">Dames chattes</a></li>
+					<li><a href="Domestique.html#D-renardes">Dames renardes</a></li>
+					<li><a href="Domestique.html#antho">Sœurs anthropomorphes</a></li>
+					<li><a href="Domestique.html#Cuisinières">Cuisinières</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="Militaire.html">Possessions Militaires</a>
+				<ul class="dropdown">
+					<li><a href="Militaire.html#Générale">Générale</a></li>
+					<li><a href="Militaire.html#Lieutenantes">Lieutenantes</a></li>
+					<li><a href="Militaire.html#Chef">Chef</a></li>
+					<li><a href="Militaire.html#loup">Division "Wolfies"</a></li>
+					<li><a href="Militaire.html#lapin">Division "Bunnies"</a></li>
+					<li><a href="Militaire.html#chat">Division "Caties"</a></li>
+					<li><a href="Militaire.html#aigle">Division "Eagles"</a></li>
+					<li><a href="Militaire.html#fox">Division "Foxies"</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="Magique.html">Possessions Magiques</a>
+				<ul class="dropdown">
+					<li><a href="Magique.html#Darkmage">Mages noires</a></li>
+					<li><a href="Magique.html#Démones">Démones</a></li>
+					<li><a href="Magique.html#Succubes">Succubes</a></li>
+					<li><a href="Magique.html#Azazel">Azazel</a></li>
+					<li><a href="Magique.html#Garde">Gardiennes</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="Peuple.html">Peuple</a>
+				<ul class="dropdown">
+					<li><a href="Peuple.html#Scientifiques">Scientifiques</a></li>
+					<li><a href="Peuple.html#Bourgeoises">Bourgeoises</a></li>
+					<li><a href="Peuple.html#Juge">Juge</a></li>
+					<li><a href="Peuple.html#Avocate">Avocate</a></li>
+					<li><a href="Peuple.html#Professeure">Professeures</a></li>
+					<li><a href="Peuple.html#Etudiente">Étudiantes</a></li>
+					<li><a href="Peuple.html#Mafieuses">Mafieuses</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="https://youtu.be/dQw4w9WgXcQ">Autres</a>
+				<ul class="dropdown">
+					<li><a href="https://holy-reich.000webhostapp.com/" target="_blank"> Holy-Reich </a></li>
+					<li><a href="map.html">Map Monde</a></li>
+					<li><a href="Lois.html">Lois</a></li>
+					<li><a href="lock.html">Autres</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+</header>
+
+<body>
+	<img id="corrupt-gif1" src="images/complex/corrupt2.gif" alt="Corruption Effect"
+		style="display:none; opacity: 0.3; position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 9999;">
+	<img id="corrupt-gif2" src="images/complex/corrupt1.gif" alt="Corruption Effect"
+		style="display:block; opacity: 0.8; position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 9999;">
+
+	<div class="paysage">
+		<h1 style="color:red;">ENFERS</h1>
+		<h2 style="color:red;">Welcome To Hell</h2>
+	</div>
+
+	<div class="paysage">
+		<div class="content">
+			<img src="images/paysage/hell1.png" alt="test" onclick="openModal(this)" loading="lazy">
+			<figcaption>[Welcome]</figcaption>
+			<img src="images/paysage/hell2.png" alt="test" onclick="openModal(this)" loading="lazy">
+			<figcaption>[Welcome]</figcaption>
+		</div>
+	</div>
+
+	<div class="listes">
+		<div>
+			<h3 class="description"> La hiérarchie :</h3>
+			<ul class="list">
+				<li> <a href="#Lucifer"> ▪ Lucifer </a> </li>
+				<li> <a href="#Lilith"> ▪ Lilith </a> </li>
+				<li> <a href="#Sins"> ▪ 7 pêches capitaux </a> </li>
+				<li> <a href="#Goetia"> ▪ Goetia </a> </li>
+				<li> <a href="#Overlords"> ▪ Overlords </a> </li>
+				<li> <a href="#Sinners"> ▪ Sinners </a> </li>
+				<li> <a href="#Hellborn"> ▪ Hellborn </a> </li>
+				<li> <a href="#Helldog"> ▪ Chiens des enfers </a> </li>
+			</ul>
+		</div>
+
+		<div>
+			<h3 class="description"> Les 7 Cercles :</h3>
+			<ul class="list">
+				<li> <a href="#Orgueil" id="sin1"> ♦ Orgueil </a> </li>
+				<li> <a href="#Colère" id="sin2"> ♦ Colère </a> </li>
+				<li> <a href="#Gourmandise" id="sin3"> ♦ Gourmandise </a> </li>
+				<li> <a href="#Avarice" id="sin4"> ♦ Avarice </a> </li>
+				<li> <a href="#Luxure" id="sin5"> ♦ Luxure </a> </li>
+				<li> <a href="#Envie" id="sin6"> ♦ Envie </a> </li>
+				<li> <a href="#Paresse" id="sin7"> ♦ Paresse </a> </li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="paysage">
+		<h2 style="color:red;">Population</h2>
+	</div>
+
+	<div class="description" onclick="lore(this)" id="Lucifer">
+		<h3>Lucifer (1)</h3>
+		<h4> Elle est la reine des enfers. <br>
+			Régnant sur tous les cercles, possédant un pouvoir bien plus élevé que les autres démons. <br>
+			La raison de cette puissance est qu'elle est un Ange Déchu, ayant été chassé du paradis.
+		</h4>
+	</div>
+
+	<div class="gallery">
+		<div class="content">
+			<img src="images/enfers/lucifer2.png" alt="" onclick="openModal(this)" loading="lazy">
+			<figcaption>
+				<div onclick="showCaption(this)">
+					<p class="description">𖤐𖤐𖤐𖤐𖤐</p>
+					<h6> 
+					</h6>
+				</div>
+			</figcaption>
+		</div>
+	</div>
+
+	<div class="description" onclick="lore(this)" id="Lilith">
+		<h3>Lilith (1)</h3>
+		<h4> Elle est la femme de la reine des enfers. <br>
+		Anciennement une humaine d'une époque très lointaine, aimant follement Lucifer elle s'est laissé corrompue et la suivie en enfer.
+		</h4>
+	</div>
+
+	<div class="gallery">
+		<div class="content">
+			<img src="images/enfers/lilith1.png" alt="" onclick="openModal(this)" loading="lazy">
+			<figcaption>
+				<div onclick="showCaption(this)">
+					<p class="description">𖤐𖤐𖤐𖤐</p>
+					<h6>
+
+					</h6>
+				</div>
+			</figcaption>
+		</div>
+	</div>
+
+	<div class="description" onclick="lore(this)" id="Sins">
+		<h3>Les 7 pêchés capitaux (7)</h3>
+		<h4> Elles sont les représentation des 7 péchés capitaux connus. <br>
+			Chacune d'elle règne sur de leur cercle respectif n'ayant que très peu de pouvoir en dehors.
+		</h4>
+	</div>
+
+	<div class="gallery">
+		<div class="content">
+			<img src="images/enfers/pride.png" alt="" onclick="openModal(this)" loading="lazy">
+			<figcaption>
+				<div onclick="showCaption(this)">
+					<p class="description">𖤐𖤐𖤐</p>
+					<h6> Nom : Lucia
+						<br> <br>
+						Taille : 1m80
+						<br> <br>
+						Reine du cercle de l'orgueil
+
+					</h6>
+				</div>
+			</figcaption>
+		</div>
+		<div class="content">
+			<img src="images/enfers/wrath.png" alt="" onclick="openModal(this)" loading="lazy">
+			<figcaption>
+				<div onclick="showCaption(this)">
+					<p class="description">𖤐𖤐𖤐</p>
+					<h6> Nom : Satina
+						<br> <br>
+						Taille : 1m90
+						<br> <br>
+						Reine du cercle de la colère
+					</h6>
+				</div>
+			</figcaption>
+		</div>
+		<div class="content">
+			<img src="images/enfers/gluttony.png" alt="" onclick="openModal(this)" loading="lazy">
+			<figcaption>
+				<div onclick="showCaption(this)">
+					<p class="description">𖤐𖤐𖤐</p>
+					<h6> Beelzebal
+						<br> <br>
+						Taille : 1m95
+						<br> <br>
+						Reine du cercle de la gourmandise
+					</h6>
+				</div>
+			</figcaption>
+		</div>
+		<div class="content">
+			<img src="images/enfers/greed.png" alt="" onclick="openModal(this)" loading="lazy">
+			<figcaption>
+				<div onclick="showCaption(this)">
+					<p class="description">𖤐𖤐𖤐</p>
+					<h6> Nom :  Mammane
+						<br> <br>
+						Taille : 1m75
+						<br> <br>
+						Reine du cercle de l'avarice
+					</h6>
+				</div>
+			</figcaption>
+		</div>
+		<div class="content">
+			<img src="images/enfers/lust.png" alt="" onclick="openModal(this)" loading="lazy">
+			<figcaption>
+				<div onclick="showCaption(this)">
+					<p class="description">𖤐𖤐𖤐</p>
+					<h6> Nom : Asmodeus
+						<br> <br>
+						Taille : 2m
+						<br> <br>
+						Reine du cercle de la luxure
+					</h6>
+				</div>
+			</figcaption>
+		</div>
+		<div class="content">
+			<img src="images/enfers/envy.png" alt="" onclick="openModal(this)" loading="lazy">
+			<figcaption>
+				<div onclick="showCaption(this)">
+					<p class="description">𖤐𖤐𖤐</p>
+					<h6> Nom : Levia
+						<br> <br>
+						Taille : 1m75
+						<br> <br>
+						Reine du cercle de l'envie
+					</h6>
+				</div>
+			</figcaption>
+		</div>
+		<div class="content">
+			<img src="images/enfers/sloth.png" alt="" onclick="openModal(this)" loading="lazy">
+			<figcaption>
+				<div onclick="showCaption(this)">
+					<p class="description">𖤐𖤐𖤐</p>
+					<h6> Nom : Belphagor
+						<br> <br>
+						Taille : 1m70
+						<br> <br>
+						Reine du cercle de la paresse
+					</h6>
+				</div>
+			</figcaption>
+		</div>
+	</div>
+
+	<div class="description" onclick="lore(this)" id="Goetia">
+		<h3>Goetia (?)</h3>
+		<h4> Les Goetia sont une race de démons royal qui ont des carasteriques de ressemblant à celles d'oiseaux.
+		</h4>
+	</div>
+
+	<div class="gallery">
+		<div class="content">
+			<img src="images/enfers/Goetia1.png" alt="" onclick="openModal(this)" loading="lazy">
+			<figcaption>
+				<div onclick="showCaption(this)">
+					<p class="description">𖤐𖤐𖤐</p>
+					<h6>
+
+					</h6>
+				</div>
+			</figcaption>
+		</div>
+		<div class="content">
+			<img src="images/enfers/Goetia2.png" alt="" onclick="openModal(this)" loading="lazy">
+			<figcaption>
+				<div onclick="showCaption(this)">
+					<p class="description">𖤐𖤐𖤐</p>
+					<h6>
+
+					</h6>
+				</div>
+			</figcaption>
+		</div>
+		<div class="content">
+			<img src="images/enfers/Goetia3.png" alt="" onclick="openModal(this)" loading="lazy">
+			<figcaption>
+				<div onclick="showCaption(this)">
+					<p class="description">𖤐𖤐𖤐</p>
+					<h6>
+
+					</h6>
+				</div>
+			</figcaption>
+		</div>
+		<div class="content">
+			<img src="images/enfers/Goetia4.png" alt="" onclick="openModal(this)" loading="lazy">
+			<figcaption>
+				<div onclick="showCaption(this)">
+					<p class="description">𖤐𖤐𖤐</p>
+					<h6>
+
+					</h6>
+				</div>
+			</figcaption>
+		</div>
+		<div class="content">
+			<img src="images/enfers/Goetia5.png" alt="" onclick="openModal(this)" loading="lazy">
+			<figcaption>
+				<div onclick="showCaption(this)">
+					<p class="description">𖤐𖤐𖤐</p>
+					<h6>
+
+					</h6>
+				</div>
+			</figcaption>
+		</div>
+	</div>
+
+	<div class="description" onclick="lore(this)" id="Overlords">
+		<h3>Overlords (?)</h3>
+		<h4> Les Overlords sont une catégorie de Sinners puissants en Enfer, qui a gagné en puissance grâce aux marchés d'âme et autres transactions. <br>
+			Ils sont au-dessus des simples Sinners et sont placés au-dessus en terme de pouvoirs dans la hiérarchie.
+		</h4>
+	</div>
+
+	<div class="gallery">
+		<div class="content">
+			<img src="images/enfers/alastara.png" alt="" onclick="openModal(this)" loading="lazy">
+			<figcaption>
+				<div onclick="showCaption(this)">
+					<p class="description">𖤐𖤐𖤐𖤐𖤐</p>
+					<h6>
+
+					</h6>
+				</div>
+			</figcaption>
+		</div>
+	</div>
+
+	<div class="description" onclick="lore(this)" id="Sinners">
+		<h3>Sinners (?)</h3>
+		<h4> Les Sinners, également connus simplement sous le nom de Pécheurs. <br>
+			Ils sont une sous-espèce de Démons qui étaient tous autrefois des humains ayant commis des péchés avant de mourir,
+			ce qui les fait arriver en Enfer comme punition. <br>
+			Les Sinners sont restreints sur le cercle de l'orgueil n'ayant aucun droit de le quitter sous peine de mort.
+		</h4>
+	</div>
+
+	<br>
+
+	<div class="description" onclick="lore(this)" id="Hellborn">
+		<h3>Hellborns (?)</h3>
+		<h4> Sont les démons qui sont nées en enfer. <br>
+			Cela regroupe surtout les succubes et les incubes. <br>
+			Les succubes étant les seules à avoir l'autorisation de quitter les enfers.<br>
+		</h4>
+	</div>
+
+	<div class="gallery">
+		<div class="content">
+			<img src="images/magique/succube2.png" alt="" onclick="openModal(this)" loading="lazy">
+			<figcaption>
+				<div onclick="showCaption(this)">
+					<p class="description">𖤐𖤐</p>
+					<h6>
+
+					</h6>
+				</div>
+			</figcaption>
+		</div>
+		<div class="content">
+			<img src="images/magique/demone6.png" alt="" onclick="openModal(this)" loading="lazy">
+			<figcaption>
+				<div onclick="showCaption(this)">
+					<p class="description">𖤐𖤐</p>
+					<h6>
+
+					</h6>
+				</div>
+			</figcaption>
+		</div>
+		<div class="content">
+			<img src="images/magique/demone5.png" alt="" onclick="openModal(this)" loading="lazy">
+			<figcaption>
+				<div onclick="showCaption(this)">
+					<p class="description">𖤐𖤐</p>
+					<h6>
+
+					</h6>
+				</div>
+			</figcaption>
+		</div>
+		<div class="content">
+			<img src="images/magique/demone4.png" alt="" onclick="openModal(this)" loading="lazy">
+			<figcaption>
+				<div onclick="showCaption(this)">
+					<p class="description">𖤐𖤐</p>
+					<h6>
+
+					</h6>
+				</div>
+			</figcaption>
+		</div>
+		<div class="content">
+			<img src="images/magique/succube3.png" alt="" onclick="openModal(this)" loading="lazy">
+			<figcaption>
+				<div onclick="showCaption(this)">
+					<p class="description">𖤐𖤐</p>
+					<h6>
+
+					</h6>
+				</div>
+			</figcaption>
+		</div>
+	</div>
+
+	<div class="description" onclick="lore(this)" id="Helldog">
+		<h3>Chiens des Enfers (?)</h3>
+		<h4> Les Chiens des Enfers sont une espèce de Démons native de l'Enfer, qui ressemble à des canidés comme les chiens et les loups. <br>
+			Ils partagent le rang le plus bas dans la hiérarchie aux côtés des Hellborns.
+		</h4>
+	</div>
+
+	<div class="gallery">
+		<div class="content">
+			<img src="images/enfers/helldog1.png" alt="" onclick="openModal(this)" loading="lazy">
+			<figcaption>
+				<div onclick="showCaption(this)">
+					<p class="description">𖤐</p>
+					<h6>
+					</h6>
+				</div>
+			</figcaption>
+		</div>
+		<div class="content">
+			<img src="images/enfers/helldog2.png" alt="" onclick="openModal(this)" loading="lazy">
+			<figcaption>
+				<div onclick="showCaption(this)">
+					<p class="description">𖤐</p>
+					<h6>
+					</h6>
+				</div>
+			</figcaption>
+		</div>
+		<div class="content">
+			<img src="images/enfers/helldog3.png" alt="" onclick="openModal(this)" loading="lazy">
+			<figcaption>
+				<div onclick="showCaption(this)">
+					<p class="description">𖤐</p>
+					<h6>
+					</h6>
+				</div>
+			</figcaption>
+		</div>
+		<div class="content">
+			<img src="images/enfers/helldog4.png" alt="" onclick="openModal(this)" loading="lazy">
+			<figcaption>
+				<div onclick="showCaption(this)">
+					<p class="description">𖤐</p>
+					<h6>
+					</h6>
+				</div>
+			</figcaption>
+		</div>
+		<div class="content">
+			<img src="images/enfers/helldog5.png" alt="" onclick="openModal(this)" loading="lazy">
+			<figcaption>
+				<div onclick="showCaption(this)">
+					<p class="description">𖤐</p>
+					<h6>
+					</h6>
+				</div>
+			</figcaption>
+		</div>
+		<div class="content">
+			<img src="images/enfers/helldog6.png" alt="" onclick="openModal(this)" loading="lazy">
+			<figcaption>
+				<div onclick="showCaption(this)">
+					<p class="description">𖤐</p>
+					<h6>
+					</h6>
+				</div>
+			</figcaption>
+		</div>
+	</div>
+
+	<div class="paysage">
+		<h2 style="color:red;">Les Cercles</h2>
+	</div>
+
+	<div class="circle_name" onclick="lore(this)" id="Orgueil">
+		<p id="sin1">Orgueil</p>
+		<h4>
+		</h4>
+	</div>
+	<div class="paysage">
+		<div class="content">
+			<img src="images/paysage/pride.png" alt="test" onclick="openModal(this)" loading="lazy">
+			<figcaption>[Welcome]</figcaption>
+		</div>
+	</div>
+
+	<div class="circle_name" onclick="lore(this)" id="Colère">
+		<p id="sin2">Colère</p>
+		<h4>
+		</h4>
+	</div>
+	<div class="paysage">
+		<div class="content">
+			<img src="images/paysage/wrath.png" alt="test" onclick="openModal(this)" loading="lazy">
+			<figcaption>[Welcome]</figcaption>
+		</div>
+	</div>
+
+	<div class="circle_name" onclick="lore(this)" id="Gourmandise">
+		<p id="sin3">Gourmandise</p>
+		<h4>
+		</h4>
+	</div>
+	<div class="paysage">
+		<div class="content">
+			<img src="images/paysage/gluttonery.png" alt="test" onclick="openModal(this)" loading="lazy">
+			<figcaption>[Welcome]</figcaption>
+		</div>
+	</div>
+
+	<div class="circle_name" onclick="lore(this)" id="Avarice">
+		<p  id="sin4">Avarice</p>
+		<h4>
+		</h4>
+	</div>
+	<div class="paysage">
+		<div class="content">
+			<img src="images/paysage/greed.png" alt="test" onclick="openModal(this)" loading="lazy">
+			<figcaption>[Welcome]</figcaption>
+		</div>
+	</div>
+
+	<div class="circle_name" onclick="lore(this)" id="Luxure">
+		<p id="sin5">Luxure</p>
+		<h4>
+		</h4>
+	</div>
+	<div class="paysage">
+		<div class="content">
+			<img src="images/paysage/lust.png" alt="test" onclick="openModal(this)" loading="lazy">
+			<figcaption>[Welcome]</figcaption>
+		</div>
+	</div>
+
+	<div class="circle_name" onclick="lore(this)" id="Envie">
+		<p id="sin6">Envie</p>
+		<h4>
+		</h4>
+	</div>
+	<div class="paysage">
+		<div class="content">
+			<img src="images/paysage/envy.png" alt="test" onclick="openModal(this)" loading="lazy">
+			<figcaption>[Welcome]</figcaption>
+		</div>
+	</div>
+
+	<div class="circle_name" onclick="lore(this)" id="Paresse">
+		<p  id="sin7">Paresse</p>
+		<h4>
+		</h4>
+	</div>
+	<div class="paysage">
+		<div class="content">
+			<img src="images/paysage/sloth.png" alt="test" onclick="openModal(this)" loading="lazy">
+			<figcaption>[Welcome]</figcaption>
+		</div>
+	</div>
+
+	<h5><a href="Corrupt.html">Return</a></h5>
+
+
+	<div class="modal">
+		<div class="modal-content">
+			<div class="modal-navigation">
+				<button class="modal-prev" onclick="prevImage()">&lt;</button>
+				<div class="modal-image-container">
+					<img id="modal-img" src="" alt="" onclick="closeModal()">
+				</div>
+				<button class="modal-next" onclick="nextImage()">&gt;</button>
+			</div>
+			<div class="modal-caption" id="modal-caption"> </div>
+		</div>
+		<div class="modal-details"> </div>
+	</div>
+
+	<div class="lore">
+		<div class="lore-content">
+			<span class="close-button" onclick="closelore()">&times;</span>
+			<div id="lore-caption"></div>
+		</div>
+	</div>
+
+</body>
+</html>
