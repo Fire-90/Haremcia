@@ -494,3 +494,21 @@ button {
 .cursor {
   cursor: pointer;
 }
+
+.flag {
+  text-align: center;
+}
+
+.flag img {
+  display: inline-block;
+  max-width: 100%;
+  max-height: 400px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.flag img:hover {
+  transform: scale(1.2);
+}
