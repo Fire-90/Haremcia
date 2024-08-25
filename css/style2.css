@@ -245,3 +245,15 @@ h3 a {
   text-decoration: none;
   color: white;
 }
+
+.report{
+  max-width: 222px;
+  transition: filter 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  overflow: hidden;
+ }
+
+.report:hover{
+  transform: translateX(10px);
+  cursor: pointer;
+  overflow: hidden;
+}
