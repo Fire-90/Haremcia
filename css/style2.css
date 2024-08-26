@@ -257,3 +257,24 @@ h3 a {
   cursor: pointer;
   overflow: hidden;
 }
+
+.entity_list{
+  max-width: 50%;
+  transition: color 0.5s ease, transform 0.3s ease;
+  overflow: hidden;
+ }
+
+.entity_list:hover{
+  transform: translateX(20px);
+  color: gold;
+  font-style: italic;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+.entity_list a {
+  transition: color 0.5s ease;
+}
+.entity_list:hover a {
+  color: gold;
+}
