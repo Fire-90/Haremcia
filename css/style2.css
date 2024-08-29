@@ -260,7 +260,7 @@ h3 a {
 
 .entity_list{
   max-width: 50%;
-  transition: color 0.5s ease, transform 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease;
   overflow: hidden;
  }
 
@@ -273,7 +273,7 @@ h3 a {
 }
 
 .entity_list a {
-  transition: color 0.5s ease;
+  transition: color 0.3s ease;
 }
 .entity_list:hover a {
   color: gold;
