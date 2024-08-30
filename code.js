@@ -77,6 +77,10 @@ function showImage(index) {
 	captionText.innerHTML = captions[index].innerHTML;
 }
 
+function changeImage(imageSrc) {
+    document.getElementById('modal-img').src = imageSrc;
+}
+
 function closeModal() {
 	document.querySelector(".modal").style.display = "none";
 	document.body.style.overflow = 'auto';
