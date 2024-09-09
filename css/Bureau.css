@@ -5,11 +5,13 @@
     font-style: normal;
 }
 
-.container {
+.centering {
+    margin: 10px;
     text-align: center;
 }
 
 button {
+    width: 300px;
     font-family: 'MONO';
     background-color: #1d1d1d;
     color: white;
@@ -105,4 +107,89 @@ button:hover {
 .close:hover {
     transform: scale(1.1);
     font-weight: bolder;
+}
+
+
+/* Styles pour l'interface des archives */
+.archiveInterface {
+    font-family: 'MONO';
+    color: #ffffff;
+    background-color: #111;
+    border: 2px solid #444;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 8px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.archive-header {
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #444;
+    color: rgb(255, 255, 255);
+}
+
+
+.folder-centering {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.folder-btn {
+    max-width: 150px;
+    max-height: 130px;
+    gap: 10px;
+    padding: 3px;
+    border-radius: 4px;
+}
+
+.folder-btn:hover {
+    background-color: #303030;
+    transform: scale(1.08);
+}
+
+.folder-btn:hover img {
+    content: url(../images/icons/open_folder.png)
+}
+
+.folder-icon {
+    max-height: 80%;
+}
+
+/* Style pour l'affichage de l'archive sélectionnée */
+.archive {
+    font-family: 'MONO';
+    width: 75%;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1000;
+}
+
+.archive-content {
+    margin-top: 25px;
+    margin-left: 25px;
+    position: relative;
+    text-align: left;
+}
+
+.tampon {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+
+.tampon img {
+    max-width: 200px;
 }
