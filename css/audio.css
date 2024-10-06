@@ -6,7 +6,7 @@
   }  
 
 .custom-audio-player {
-    max-width: 50%;
+    max-width: 80%;
     font-family: 'MONO';
     margin: 5px;
     display: flex;
@@ -21,21 +21,28 @@
 }
 
 .control-button {
+    height: 50px;
+    width: 50px;
+    align-items: center;
+    padding: 5px;
+    text-align: left;
     font-family: 'MONO';
-    padding: 10px 10px;
     font-size: 18px;
-    background-color: #555;
+    background-color: #55555554;
     color: goldenrod;
     border: none;
     cursor: pointer;
-    transition: all 0.5s ease;
-    border-radius: 4px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.control-button img {
+    max-height: 50px;
 }
 
 .control-button:hover {
-    background-color: rgb(202, 172, 0);
-    border-radius: 10px;
-    color: #eee;
+    background-color: rgba(202, 172, 0, 0.349);
+    transform: scale(1.1);
 }
 
 .timestamp {
