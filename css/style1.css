@@ -21,6 +21,11 @@ body {
   margin: 0px;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
 h1 {
   font-size: 60px;
   font-weight: bold;

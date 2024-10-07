@@ -6,7 +6,7 @@
   }  
 
 .custom-audio-player {
-    max-width: 80%;
+    width: 630px;
     font-family: 'MONO';
     margin: 5px;
     display: flex;
@@ -21,15 +21,15 @@
 }
 
 .control-button {
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     align-items: center;
     padding: 5px;
     text-align: left;
     font-family: 'MONO';
     font-size: 18px;
     background-color: #55555554;
-    color: goldenrod;
+    color: white;
     border: none;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -41,18 +41,18 @@
 }
 
 .control-button:hover {
-    background-color: rgba(202, 172, 0, 0.349);
+    background-color: rgba(207, 207, 207, 0.349);
     transform: scale(1.1);
 }
 
 .timestamp {
     font-size: 16px;
-    color: goldenrod;
+    color: rgb(255, 255, 255);
 }
 
 .progress-container {
     width: 150px;
-    height: 8px;
+    height: 10px;
     background-color: #666;
     border-radius: 4px;
     position: relative;
@@ -61,7 +61,7 @@
 
 .progress-bar {
     height: 100%;
-    background-color: gold;
+    background-color: rgb(255, 255, 255);
     width: 0;
     position: absolute;
     top: 0;
@@ -71,7 +71,7 @@
 
 .volume-slider {
     width: 80px;
-    background: goldenrod;
+    background: rgba(160, 160, 160, 0.767);
     height: 10px;
     border-radius: 15px;
     -webkit-appearance: none;
@@ -85,17 +85,38 @@
     appearance: none;
     width: 20px;
     height: 20px;
-    background: gold;
+    background: rgb(255, 255, 255);
     border-radius: 15px;
     cursor: pointer;
     transition: all 0.5s ease;
 }
 
 .volume-slider::-webkit-slider-thumb:hover {
-    transform: scale(1.08);
-    background: rgb(255, 255, 0);
+    transform: scale(1.09);
 }
 
 .audio-player {
     display: none;
+}
+
+.playlist {
+    font-family: 'MONO';
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.song {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.song img{
+    border-radius: 5px;
+    max-width: 250px;
 }
